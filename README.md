@@ -4,9 +4,23 @@ Este repositório público contém somente os artefatos oficiais de distribuiç�
 
 ## Download
 
-Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.16**.
+Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.17**.
 
 ## Nesta versão
+
+### 0.1.17
+
+- skills selecionadas são lidas pelo Strigoi antes da inferência, sem transformar seu carregamento no objetivo do plano;
+- documentos referenciados por `#file` no texto e anexos do campo de mensagem seguem para o payload real, com deduplicação;
+- Planejar faz descoberta read-only limitada e produz um checklist focado no resultado solicitado, com eventuais lacunas de evidência explícitas;
+- checkpoints de respostas interrompidas/canceladas e planos antigos de apenas carregar uma skill são rejeitados;
+- continuações manuais preservam objetivo, skill e documento de origem;
+- até três continuações automáticas ao atingir limite de geração, sem reenviar Thinking privado nem executar chamadas de ferramenta incompletas;
+- contagem real de tokens do chat template, incluindo ferramentas, e ajuste da reserva de saída ao contexto disponível;
+- listagens extensas são compactadas com aviso explícito; documentos e skills não são cortados por essa compactação;
+- leituras auxiliares grandes demais retornam uma prévia explicitamente identificada para o modelo, que pode solicitar trechos com offset/limit; fontes primárias já anexadas e a skill selecionada são preservadas;
+- parâmetros de esforço de raciocínio corrigidos para o runtime. GPT-OSS não oferece desligamento absoluto de raciocínio pelo parâmetro `enable_thinking`;
+- validações automatizadas de preparação, anexos, checkpoints, cancelamento, orçamento e continuidade; teste local com GPT-OSS e documento DOCX real. A qualidade do plano ainda depende do modelo e dos dados disponíveis.
 
 ### 0.1.16
 
