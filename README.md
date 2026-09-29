@@ -4,9 +4,15 @@ Este repositório público contém somente os artefatos oficiais de distribuiç�
 
 ## Download
 
-Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.14**.
+Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.15**.
 
 ## Nesta versão
+
+### 0.1.15
+
+- o conteúdo extraído de documentos anexados acompanha a mensagem enviada ao modelo, inclusive no modo Planejar;
+- o Strigoi usa o documento anexado como fonte e só pede que o usuário cole o texto se a extração falhar;
+- anexos de arquivo são removidos do campo após o envio para evitar reutilização acidental; a mensagem já enviada permanece intacta.
 
 ### 0.1.14
 
