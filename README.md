@@ -4,9 +4,16 @@ Este repositório público contém somente os artefatos oficiais de distribuiç�
 
 ## Download
 
-Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.13**.
+Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.14**.
 
 ## Nesta versão
+
+### 0.1.14
+
+- documentos podem ser arrastados do workspace ou de qualquer pasta local diretamente para o chat;
+- extração de texto para DOCX, XLSX, PPTX, PDF, ODT e formatos de texto comuns;
+- o anexo exato permanece como fonte; se ele não puder ser lido, o Strigoi mostra o problema em vez de escolher outro arquivo;
+- modo Planejar usa ferramentas de leitura para consultar skills e o workspace sem editar arquivos ou executar comandos.
 
 ### 0.1.13
 
