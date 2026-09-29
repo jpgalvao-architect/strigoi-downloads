@@ -4,9 +4,19 @@ Este repositório público contém somente os artefatos oficiais de distribuiç�
 
 ## Download
 
-Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.15**.
+Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.16**.
 
 ## Nesta versão
+
+### 0.1.16
+
+- resolução compartilhada de caminhos entre anexos e ferramentas: relativos, prefixados pelo workspace, absolutos Windows e URIs file://;
+- leitura de DOCX e outros documentos Office também pela ferramenta getFileContent, não apenas pelo anexo;
+- arquivos externos anexados podem ser consultados na solicitação correspondente, sem abrir acesso irrestrito ao disco;
+- skills e arquivos de apoio na pasta pessoal .agents/skills usam o diretório do usuário atual; carregamento aguarda a descoberta e informa o caminho real da skill;
+- comparação de caminhos e listagens corrigida para diferenças de maiúsculas/minúsculas do Windows; raízes consultadas ao vivo;
+- erros incluem caminho solicitado e URI resolvida, sem substituição silenciosa por README;
+- validação automatizada com arquivos reais, incluindo leitura idêntica de DOCX por quatro formas de caminho. Isso não garante a qualidade do planejamento produzido por cada modelo local.
 
 ### 0.1.15
 
