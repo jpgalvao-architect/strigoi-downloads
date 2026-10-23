@@ -4,9 +4,34 @@ Este repositório público contém somente os artefatos oficiais de distribuiç�
 
 ## Download
 
-Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.17**.
+Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.19**.
 
 ## Nesta versão
+
+### 0.1.19
+
+- tarefas produtivas continuam além das antigas 16 rodadas de ferramentas;
+- respostas interrompidas pelo limite de geração continuam enquanto houver
+  progresso, sem o antigo teto total de três continuações;
+- renovação automática do contexto de trabalho, com resumo local do histórico,
+  preservação das instruções e fontes primárias e acesso aos resultados completos
+  no chat;
+- avanço pelos itens pendentes do plano sem exigir outra mensagem de “continue”;
+- proteção contra repetição de operações concluídas após retomadas; chamadas de
+  ferramenta incompletas são regeneradas antes de executar;
+- cancelamento, bloqueios reais e aceitação humana das alterações propostas
+  continuam sendo respeitados; ciclos sem progresso terminam com erro explícito;
+- melhorias de contexto e destaque visual de skills preparadas na versão 0.1.18
+  também estão incluídas.
+
+Validação: regressões automatizadas com 160 rodadas de ferramentas, múltiplas
+renovações de contexto, respostas longas, cancelamento e recuperação de conexão.
+Teste com Qwen3-14B local e tokenizador real preservou o registro de uma alteração
+proposta após renovar o contexto, sem aplicá-la. Os limites físicos do modelo e a
+qualidade dos resultados continuam dependendo do modelo, das fontes e do hardware.
+
+O instalador inclui um arquivo `.sha256` para conferir a integridade do download.
+Esta versão de testes ainda não possui assinatura de distribuição.
 
 ### 0.1.17
 
