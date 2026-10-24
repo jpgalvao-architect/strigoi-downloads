@@ -4,9 +4,31 @@ Este repositório público contém somente os artefatos oficiais de distribuiç�
 
 ## Download
 
-Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.19**.
+Baixe a versão mais recente pela página de [Releases](https://github.com/jpgalvao-architect/strigoi-downloads/releases/latest). A versão atual é o instalador Windows x64 **Strigoi 0.1.20**.
 
 ## Nesta versão
+
+### 0.1.20
+
+- fontes extensas de skills e documentos recebem leitura automática em partes,
+  preservando o texto original durante o pedido;
+- ferramentas mantêm seus parâmetros e restrições, com ajuda integral disponível
+  sob demanda quando a documentação precisa ser reduzida para caber no contexto;
+- o modo Agente propõe o arquivo solicitado pela skill, sem receber a instrução de
+  Planejar para devolver apenas um plano curto;
+- documentos longos podem ser montados em partes antes da proposta para revisão;
+- pedidos com as skills jp-tdb, tdb-claro, tda-claro e docs-writer exigem uma
+  proposta registrada; dizer “arquivo criado” não comprova a entrega;
+- erros de formato do runtime podem ser recuperados sem executar chamadas
+  incompletas. Cancelamento e aceitação humana continuam sendo respeitados.
+
+Validação automatizada cobre paginação exata, isolamento, cancelamento, schemas,
+montagem de documentos em partes, propostas somente após leitura das fontes e
+rejeição de conclusões sem arquivo proposto. O contexto continua finito e a
+qualidade depende do modelo e das fontes; não há garantia de concluir toda tarefa.
+Teste local com GPT-OSS 20B e DOCX real verificou a leitura das fontes e a proposta
+de HTML. A revisão encontrou limitações de qualidade no documento gerado; esse
+teste não comprova cumprimento integral da skill.
 
 ### 0.1.19
 
